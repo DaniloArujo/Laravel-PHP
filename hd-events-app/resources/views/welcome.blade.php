@@ -26,5 +26,20 @@
         @endif
 
     <p> {{$nome}} tem {{$idade}} anos</p>
+    @for($i = 0; $i < count($arr); $i++)
+        <p>{{$arr[$i]}}0 - {{$arr[$i]}}</p>
+        @if($i == 2)
+        <p>O i é 2</p>
+        @endif
+    @endfor
 
+    @foreach($nomes as $nome)
+        <p>{{$nome}}</p>
+    @endforeach
+    @php
+        $name = "João";
+        echo $name;
+    @endphp
+    <!-- comentário html-->
+    {{--comentário blade--}}
 </html>
