@@ -7,16 +7,18 @@
 
     <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/scripts.js"></script>
 
 </head>
 
 <body class="antialiased">
     <h1>Algum titulo</h1>
+
+    <img src="/img/Screenshot_1.png" alt="Banner">
+
+
     @if( $idade > 18)
     <p>{{$nome}} é maior de idade</p>
     @elseif( $idade < 18 and $idade> 12 )
